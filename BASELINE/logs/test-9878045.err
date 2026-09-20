@@ -1,0 +1,131 @@
+cesga/2022 unloaded
+python/3.10.8 unloaded
+        Preparing the environment for use of the CESGA 2022 software stack.
+        Please rebuild modules cache: module --ignore-cache avail
+     
+cesga/2022 loaded
+python/3.10.8 loaded
+python/3.10.8 unloaded
+python/3.10.8 loaded
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Found cached dataset squad (/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f)
+[INFO|configuration_utils.py:853] 2026-09-20 18:56:37,532 >> loading configuration file config.json from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+[INFO|configuration_utils.py:929] 2026-09-20 18:56:37,551 >> Model config BertConfig {
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "eos_token_id": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:853] 2026-09-20 18:56:37,694 >> loading configuration file config.json from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+[INFO|configuration_utils.py:929] 2026-09-20 18:56:37,697 >> Model config BertConfig {
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "eos_token_id": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:768] 2026-09-20 18:56:38,348 >> loading weights file model.safetensors from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/model.safetensors
+[INFO|modeling_utils.py:852] 2026-09-20 18:56:38,395 >> Since the `dtype` attribute can't be found in model's config object, will use dtype=torch.float32 as derived from model's weights
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 153/197 [00:00<00:00, 1009.67it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 1165.65it/s]
+[WARNING|loading_report.py:307] 2026-09-20 18:56:39,199 >> [1mBertForQuestionAnswering LOAD REPORT[0m from: google-bert/bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+qa_outputs.weight                          | MISSING    | 
+qa_outputs.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Running tokenizer on train dataset:   0%|          | 0/1000 [00:00<?, ? examples/s]Caching processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-9de51bc207bf8c1e.arrow
+Running tokenizer on train dataset: 100%|██████████| 1000/1000 [00:00<00:00, 1051.36 examples/s]Running tokenizer on train dataset: 100%|██████████| 1000/1000 [00:00<00:00, 1030.64 examples/s]
+Running tokenizer on validation dataset:   0%|          | 0/200 [00:00<?, ? examples/s]Caching processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-3ab02d26e0fd990d.arrow
+Running tokenizer on validation dataset: 100%|██████████| 200/200 [00:00<00:00, 1221.56 examples/s]Running tokenizer on validation dataset: 100%|██████████| 200/200 [00:00<00:00, 1138.67 examples/s]
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 4.53kB [00:00, 20.7MB/s]
+Downloading extra modules: 0.00B [00:00, ?B/s]Downloading extra modules: 3.32kB [00:00, 17.3MB/s]
+[INFO|trainer.py:1562] 2026-09-20 18:56:45,217 >> ***** Running training *****
+[INFO|trainer.py:1563] 2026-09-20 18:56:45,217 >>   Num examples = 1,000
+[INFO|trainer.py:1564] 2026-09-20 18:56:45,217 >>   Num Epochs = 1
+[INFO|trainer.py:1565] 2026-09-20 18:56:45,217 >>   Num update steps per epoch = 84
+[INFO|trainer.py:1566] 2026-09-20 18:56:45,217 >>   Instantaneous batch size per device = 12
+[INFO|trainer.py:1569] 2026-09-20 18:56:45,218 >>   Total train batch size (w. parallel, distributed & accumulation) = 12
+[INFO|trainer.py:1570] 2026-09-20 18:56:45,218 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1571] 2026-09-20 18:56:45,218 >>   Total optimization steps = 84
+[INFO|trainer.py:1572] 2026-09-20 18:56:45,218 >>   Number of trainable parameters = 108,893,186
+  0%|          | 0/84 [00:00<?, ?it/s]  1%|          | 1/84 [00:05<07:24,  5.35s/it]  2%|▏         | 2/84 [00:05<03:09,  2.32s/it]  4%|▎         | 3/84 [00:05<01:48,  1.34s/it]  5%|▍         | 4/84 [00:05<01:10,  1.13it/s]  6%|▌         | 5/84 [00:06<00:49,  1.59it/s]  7%|▋         | 6/84 [00:06<00:37,  2.10it/s]  8%|▊         | 7/84 [00:06<00:29,  2.65it/s] 10%|▉         | 8/84 [00:06<00:23,  3.19it/s] 11%|█         | 9/84 [00:06<00:20,  3.69it/s] 12%|█▏        | 10/84 [00:06<00:17,  4.13it/s] 13%|█▎        | 11/84 [00:07<00:16,  4.50it/s] 14%|█▍        | 12/84 [00:07<00:14,  4.80it/s] 15%|█▌        | 13/84 [00:07<00:14,  5.03it/s] 17%|█▋        | 14/84 [00:07<00:13,  5.21it/s] 18%|█▊        | 15/84 [00:07<00:12,  5.34it/s] 19%|█▉        | 16/84 [00:08<00:12,  5.43it/s] 20%|██        | 17/84 [00:08<00:12,  5.50it/s] 21%|██▏       | 18/84 [00:08<00:11,  5.55it/s] 23%|██▎       | 19/84 [00:08<00:11,  5.57it/s] 24%|██▍       | 20/84 [00:08<00:11,  5.59it/s]                                                24%|██▍       | 20/84 [00:08<00:11,  5.59it/s] 25%|██▌       | 21/84 [00:09<00:13,  4.75it/s] 26%|██▌       | 22/84 [00:09<00:12,  4.98it/s] 27%|██▋       | 23/84 [00:09<00:11,  5.17it/s] 29%|██▊       | 24/84 [00:09<00:11,  5.30it/s] 30%|██▉       | 25/84 [00:09<00:10,  5.40it/s] 31%|███       | 26/84 [00:09<00:10,  5.48it/s] 32%|███▏      | 27/84 [00:10<00:10,  5.53it/s] 33%|███▎      | 28/84 [00:10<00:10,  5.56it/s] 35%|███▍      | 29/84 [00:10<00:09,  5.58it/s] 36%|███▌      | 30/84 [00:10<00:09,  5.60it/s] 37%|███▋      | 31/84 [00:10<00:09,  5.61it/s] 38%|███▊      | 32/84 [00:10<00:09,  5.62it/s] 39%|███▉      | 33/84 [00:11<00:09,  5.62it/s] 40%|████      | 34/84 [00:11<00:08,  5.63it/s] 42%|████▏     | 35/84 [00:11<00:08,  5.63it/s] 43%|████▎     | 36/84 [00:11<00:08,  5.63it/s] 44%|████▍     | 37/84 [00:11<00:08,  5.63it/s] 45%|████▌     | 38/84 [00:12<00:08,  5.63it/s] 46%|████▋     | 39/84 [00:12<00:07,  5.64it/s] 48%|████▊     | 40/84 [00:12<00:07,  5.63it/s]                                                48%|████▊     | 40/84 [00:12<00:07,  5.63it/s] 49%|████▉     | 41/84 [00:12<00:07,  5.63it/s] 50%|█████     | 42/84 [00:12<00:07,  5.63it/s] 51%|█████     | 43/84 [00:12<00:07,  5.63it/s] 52%|█████▏    | 44/84 [00:13<00:07,  5.64it/s] 54%|█████▎    | 45/84 [00:13<00:06,  5.64it/s] 55%|█████▍    | 46/84 [00:13<00:06,  5.64it/s] 56%|█████▌    | 47/84 [00:13<00:06,  5.63it/s] 57%|█████▋    | 48/84 [00:13<00:06,  5.63it/s] 58%|█████▊    | 49/84 [00:13<00:06,  5.64it/s] 60%|█████▉    | 50/84 [00:14<00:06,  5.63it/s] 61%|██████    | 51/84 [00:14<00:05,  5.64it/s] 62%|██████▏   | 52/84 [00:14<00:05,  5.63it/s] 63%|██████▎   | 53/84 [00:14<00:05,  5.63it/s] 64%|██████▍   | 54/84 [00:14<00:05,  5.63it/s] 65%|██████▌   | 55/84 [00:15<00:05,  5.63it/s] 67%|██████▋   | 56/84 [00:15<00:04,  5.63it/s] 68%|██████▊   | 57/84 [00:15<00:04,  5.63it/s] 69%|██████▉   | 58/84 [00:15<00:04,  5.62it/s] 70%|███████   | 59/84 [00:15<00:04,  5.62it/s] 71%|███████▏  | 60/84 [00:15<00:04,  5.63it/s]                                                71%|███████▏  | 60/84 [00:15<00:04,  5.63it/s] 73%|███████▎  | 61/84 [00:16<00:04,  5.63it/s] 74%|███████▍  | 62/84 [00:16<00:03,  5.62it/s] 75%|███████▌  | 63/84 [00:16<00:03,  5.62it/s] 76%|███████▌  | 64/84 [00:16<00:03,  5.63it/s] 77%|███████▋  | 65/84 [00:16<00:03,  5.62it/s] 79%|███████▊  | 66/84 [00:17<00:03,  5.62it/s] 80%|███████▉  | 67/84 [00:17<00:03,  5.61it/s] 81%|████████  | 68/84 [00:17<00:02,  5.62it/s] 82%|████████▏ | 69/84 [00:17<00:02,  5.62it/s] 83%|████████▎ | 70/84 [00:17<00:02,  5.62it/s] 85%|████████▍ | 71/84 [00:17<00:02,  5.62it/s] 86%|████████▌ | 72/84 [00:18<00:02,  5.62it/s] 87%|████████▋ | 73/84 [00:18<00:01,  5.61it/s] 88%|████████▊ | 74/84 [00:18<00:01,  5.61it/s] 89%|████████▉ | 75/84 [00:18<00:01,  5.62it/s] 90%|█████████ | 76/84 [00:18<00:01,  5.62it/s] 92%|█████████▏| 77/84 [00:18<00:01,  5.62it/s] 93%|█████████▎| 78/84 [00:19<00:01,  5.62it/s] 94%|█████████▍| 79/84 [00:19<00:00,  5.62it/s] 95%|█████████▌| 80/84 [00:19<00:00,  5.62it/s]                                                95%|█████████▌| 80/84 [00:19<00:00,  5.62it/s] 96%|█████████▋| 81/84 [00:19<00:00,  5.61it/s] 98%|█████████▊| 82/84 [00:19<00:00,  5.60it/s] 99%|█████████▉| 83/84 [00:20<00:00,  5.62it/s][INFO|trainer.py:1928] 2026-09-20 18:57:05,330 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                               100%|██████████| 84/84 [00:20<00:00,  5.62it/s]100%|██████████| 84/84 [00:20<00:00,  4.18it/s]
+[INFO|trainer.py:3993] 2026-09-20 18:57:05,333 >> Saving model checkpoint to BASELINE/outputs/test
+[INFO|configuration_utils.py:607] 2026-09-20 18:57:05,339 >> Configuration saved in BASELINE/outputs/test/config.json
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+[INFO|modeling_utils.py:3556] 2026-09-20 18:57:06,433 >> Model weights saved in BASELINE/outputs/test/model.safetensors
+[INFO|tokenization_utils_base.py:2113] 2026-09-20 18:57:06,436 >> tokenizer config file saved in BASELINE/outputs/test/tokenizer_config.json
+[INFO|trainer.py:1177] 2026-09-20 18:57:06,510 >> The following columns in the Evaluation set don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id. If offset_mapping, example_id are not expected by `BertForQuestionAnswering.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2840] 2026-09-20 18:57:06,513 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:2842] 2026-09-20 18:57:06,513 >>   Num examples = 200
+[INFO|trainer.py:2845] 2026-09-20 18:57:06,513 >>   Batch size = 12
+  0%|          | 0/17 [00:00<?, ?it/s] 18%|█▊        | 3/17 [00:00<00:00, 26.96it/s] 35%|███▌      | 6/17 [00:00<00:00, 20.60it/s] 53%|█████▎    | 9/17 [00:00<00:00, 19.26it/s] 65%|██████▍   | 11/17 [00:00<00:00, 18.77it/s] 76%|███████▋  | 13/17 [00:00<00:00, 18.45it/s] 88%|████████▊ | 15/17 [00:00<00:00, 18.21it/s]
+  0%|          | 0/200 [00:00<?, ?it/s][A
+ 31%|███       | 62/200 [00:00<00:00, 616.95it/s][A100%|██████████| 200/200 [00:00<00:00, 1064.75it/s]
+100%|██████████| 17/17 [00:01<00:00, 14.27it/s]
+[INFO|modelcard.py:264] 2026-09-20 18:57:07,973 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Question Answering', 'type': 'question-answering'}, 'dataset': {'name': 'rajpurkar/squad', 'type': 'rajpurkar/squad'}}

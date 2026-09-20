@@ -1,0 +1,146 @@
+slurmstepd: info: Setting TMPDIR to /scratch/9878045. Previous errors about TMPDIR can be discarded
+09/20/2026 18:56:34 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: False, 16-bits training: False
+09/20/2026 18:56:34 - INFO - __main__ - Training/evaluation parameters TrainingArguments(
+accelerator_config={'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None, 'use_configured_state': False},
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+average_tokens_across_devices=True,
+batch_eval_metrics=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_in_order=True,
+dataloader_multiprocessing_context=None,
+dataloader_num_workers=0,
+dataloader_persistent_workers=False,
+dataloader_pin_memory=True,
+dataloader_prefetch_factor=None,
+ddp_backend=None,
+ddp_broadcast_buffers=None,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_static_graph=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=True,
+do_predict=False,
+do_train=True,
+enable_jit_checkpoint=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_do_concat_batches=True,
+eval_on_start=False,
+eval_steps=None,
+eval_strategy=no,
+eval_use_gather_object=False,
+fp16=False,
+fp16_full_eval=False,
+fsdp=None,
+fsdp_config=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+gradient_checkpointing_kwargs=None,
+greater_is_better=None,
+hub_always_push=False,
+hub_model_id=None,
+hub_private_repo=None,
+hub_revision=None,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_for_metrics=[],
+include_num_input_tokens_seen=no,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=3e-05,
+length_column_name=length,
+liger_kernel_config=None,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=20,
+logging_strategy=steps,
+lr_scheduler_kwargs=None,
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+neftune_noise_alpha=None,
+num_train_epochs=1.0,
+optim=adamw_torch_fused,
+optim_args=None,
+optim_target_modules=None,
+output_dir=BASELINE/outputs/test,
+parallelism_config=None,
+per_device_eval_batch_size=12,
+per_device_train_batch_size=12,
+prediction_loss_only=False,
+project=huggingface,
+push_to_hub=False,
+remove_unused_columns=True,
+report_to=[],
+restore_callback_states_from_checkpoint=False,
+resume_from_checkpoint=None,
+run_name=None,
+save_on_each_node=False,
+save_only_model=False,
+save_steps=500,
+save_strategy=no,
+save_total_limit=None,
+seed=42,
+skip_memory_metrics=True,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torch_empty_cache_steps=None,
+trackio_bucket_id=None,
+trackio_space_id=None,
+trackio_static_space_id=None,
+train_sampling_strategy=random,
+use_cache=False,
+use_cpu=False,
+use_liger_kernel=False,
+warmup_steps=0,
+weight_decay=0.0,
+)
+09/20/2026 18:56:34 - WARNING - huggingface_hub.utils._http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+09/20/2026 18:56:36 - INFO - datasets.builder - Found cached dataset squad (/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f)
+09/20/2026 18:56:40 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-9de51bc207bf8c1e.arrow
+09/20/2026 18:56:40 - INFO - datasets.arrow_dataset - Caching processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-3ab02d26e0fd990d.arrow
+09/20/2026 18:56:42 - WARNING - accelerate.utils.other - [RANK 0] Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+{'loss': '5.226', 'grad_norm': '6.67', 'learning_rate': '2.321e-05', 'epoch': '0.2381'}
+{'loss': '4.306', 'grad_norm': '14.52', 'learning_rate': '1.607e-05', 'epoch': '0.4762'}
+{'loss': '3.948', 'grad_norm': '8.498', 'learning_rate': '8.929e-06', 'epoch': '0.7143'}
+{'loss': '3.847', 'grad_norm': '10.98', 'learning_rate': '1.786e-06', 'epoch': '0.9524'}
+{'train_runtime': '20.11', 'train_samples_per_second': '49.72', 'train_steps_per_second': '4.176', 'train_loss': '4.303', 'epoch': '1'}
+***** train metrics *****
+  epoch                    =        1.0
+  total_flos               =   182513GF
+  train_loss               =     4.3033
+  train_runtime            = 0:00:20.11
+  train_samples            =       1000
+  train_samples_per_second =      49.72
+  train_steps_per_second   =      4.176
+09/20/2026 18:57:06 - INFO - __main__ - *** Evaluate ***
+09/20/2026 18:57:07 - INFO - utils_qa - Post-processing 200 example predictions split into 200 features.
+09/20/2026 18:57:07 - INFO - utils_qa - Saving predictions to BASELINE/outputs/test/eval_predictions.json.
+09/20/2026 18:57:07 - INFO - utils_qa - Saving nbest_preds to BASELINE/outputs/test/eval_nbest_predictions.json.
+***** eval metrics *****
+  epoch                   =        1.0
+  eval_exact_match        =       19.0
+  eval_f1                 =    22.3911
+  eval_runtime            = 0:00:00.99
+  eval_samples            =        200
+  eval_samples_per_second =    201.112
+  eval_steps_per_second   =     17.095
