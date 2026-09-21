@@ -2,11 +2,15 @@
 
 This directory contains an additional profiling experiment for the HPC Tools AI Lab.
 
-The goal is to analyze why the distributed D2 experiment achieved an end-to-end speedup of approximately 2.11x instead of the theoretical 4x when scaling from one A100 GPU to four A100 GPUs.
+The goal is to analyze factors that contribute to the approximately 2.11x Hugging Face-reported training-runtime speedup observed in the formal D2 run, rather than the theoretical 4x when scaling from one A100 GPU to four A100 GPUs.
 
 ## Experimental setup
 
 The profiling experiments use the same general BERT question-answering workload as D1 and D2.
+
+### Scope and limitations
+
+The profiling runs are controlled microbenchmarks rather than direct profiles of the complete D1/D2 training jobs. They use a 512-example `train[:512]` subset, dummy QA answer positions, 15 profiling steps, and explicit CUDA synchronization. The data are tokenized before profiling. Therefore, these results identify costs in this controlled workload, but do not quantify every source of the formal D1/D2 training-runtime difference.
 
 ### Baseline profiling
 
@@ -92,15 +96,15 @@ However, DDP must synchronize gradients between the four processes after backwar
 
 In this experiment, NCCL AllReduce accounts for approximately 603 ms and almost 47% of the reported self CUDA time on rank 0.
 
-This communication and synchronization overhead explains an important part of the gap between ideal linear scaling and the measured end-to-end D2 speedup.
+This controlled profiling microbenchmark shows that NCCL AllReduce is a significant communication cost in the distributed workload. These results support the interpretation that communication and synchronization overhead contribute to the sub-linear scaling observed in the formal D2 training run.
 
 ## Relation to D1 and D2
 
-The formal D1 runtime was approximately:
+The Hugging Face-reported D1 training runtime was approximately:
 
 - 2686.58 seconds
 
-The formal D2 runtime was approximately:
+The Hugging Face-reported D2 training runtime was approximately:
 
 - 1270.47 seconds
 
@@ -108,8 +112,9 @@ Therefore:
 
 ```text
 speedup = 2686.58 / 1270.47 ≈ 2.11x
+```
 
-Although four GPUs provide significantly more compute capacity, the workload does not achieve a 4x speedup because distributed training introduces:
+The formal D1/D2 comparison shows sub-linear training-runtime scaling. Factors that can contribute to this behavior include:
 
 - gradient synchronization
 - NCCL collective communication
@@ -118,7 +123,7 @@ Although four GPUs provide significantly more compute capacity, the workload doe
 - reduced per-GPU batch size
 - other serial and data-loading overheads
 
-The profiler provides direct evidence of the NCCL AllReduce component of this overhead.
+The controlled profiling run indicates that NCCL AllReduce is one significant communication cost; it is consistent with the interpretation that communication and synchronization contribute to the formal D2 result.
 
 ## Memory behavior
 
@@ -153,4 +158,3 @@ The directory `PROFILING/traces/` is excluded through `.gitignore`.
 - `profile_distributed.slurm`: two-node distributed Slurm job
 - `logs/`: profiling execution logs
 - `traces/`: local raw profiler traces, ignored by Git
-```
