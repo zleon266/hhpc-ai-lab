@@ -18,6 +18,18 @@ The Python environment and the training setup are the same as D1, except for
 the DDP launch and the per-device batch size needed to preserve the global batch
 size.
 
+### Upstream source
+
+The question-answering source files in `run_qa.py`, `trainer_qa.py`, and
+`utils_qa.py` are identical to the files used for D1 and are based on the
+official Hugging Face Transformers PyTorch question-answering example.
+
+Their recorded upstream commit is available in `UPSTREAM_COMMIT.txt`.
+
+The runtime environment is locked in `requirements.lock.txt`, including
+`transformers==5.17.0`. The distributed experiment changes the execution
+configuration while retaining the same QA source files used for D1.
+
 ## Resources
 
 | Resource | D2 configuration |
@@ -161,4 +173,3 @@ The D2 implementation successfully ran PyTorch DDP over four A100 GPUs on two
 nodes. The communication smoke test passed, the small distributed test completed
 end-to-end, and the formal run achieved approximately 2.11x training speedup
 over D1 while maintaining essentially the same QA evaluation quality.
-
