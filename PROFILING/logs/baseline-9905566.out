@@ -1,0 +1,69 @@
+slurmstepd: info: Setting TMPDIR to /scratch/9905566. Previous errors about TMPDIR can be discarded
+===== BASELINE PROFILING =====
+JOB_ID=9905566
+TRACE_DIR=PROFILING/traces/baseline-9905566
+NVIDIA A100-PCIE-40GB, 570.86.15, 40960 MiB
+===== PROFILING START =====
+2026-09-21T18:24:57+02:00
+GPU: NVIDIA A100-PCIE-40GB
+Batch size: 12
+Profile steps: 15
+step=1/15 loss=5.685773
+step=2/15 loss=5.386783
+step=3/15 loss=5.055011
+step=4/15 loss=4.544621
+step=5/15 loss=4.036082
+step=6/15 loss=3.807668
+step=7/15 loss=3.405138
+step=8/15 loss=3.005015
+step=9/15 loss=2.786585
+step=10/15 loss=2.360617
+step=11/15 loss=2.032082
+step=12/15 loss=1.772320
+step=13/15 loss=1.603505
+step=14/15 loss=1.184016
+step=15/15 loss=0.899227
+
+===== PROFILER SUMMARY =====
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                          ProfilerStep*         0.00%       0.000us         0.00%       0.000us       0.000us        1.764s       102.46%        1.764s     176.401ms           0 B           0 B           0 B           0 B            10  
+                                               aten::mm         1.18%      23.469ms         1.66%      32.931ms      22.555us     936.537ms        54.40%     936.537ms     641.464us           0 B           0 B      17.74 GB      17.74 GB          1460  
+                                            aten::addmm         0.98%      19.501ms         1.25%      24.840ms      34.028us     453.508ms        26.34%     453.508ms     621.244us           0 B           0 B      14.41 GB      14.41 GB           730  
+                        ampere_sgemm_64x32_sliced1x4_nt         0.00%       0.000us         0.00%       0.000us       0.000us     337.832ms        19.62%     337.832ms     563.053us           0 B           0 B           0 B           0 B           600  
+                                ampere_sgemm_128x128_tn         0.00%       0.000us         0.00%       0.000us       0.000us     306.923ms        17.83%     306.923ms     511.538us           0 B           0 B           0 B           0 B           600  
+                                 ampere_sgemm_128x64_nn         0.00%       0.000us         0.00%       0.000us       0.000us     152.414ms         8.85%     152.414ms     317.530us           0 B           0 B           0 B           0 B           480  
+                                 ampere_sgemm_128x32_nn         0.00%       0.000us         0.00%       0.000us       0.000us     152.344ms         8.85%     152.344ms       1.172ms           0 B           0 B           0 B           0 B           130  
+                                ampere_sgemm_128x128_nn         0.00%       0.000us         0.00%       0.000us       0.000us     146.929ms         8.53%     146.929ms       1.224ms           0 B           0 B           0 B           0 B           120  
+                                ampere_sgemm_128x128_nt         0.00%       0.000us         0.00%       0.000us       0.000us     146.561ms         8.51%     146.561ms       1.221ms           0 B           0 B           0 B           0 B           120  
+                                 ampere_sgemm_128x64_tn         0.00%       0.000us         0.00%       0.000us       0.000us     146.216ms         8.49%     146.216ms       1.218ms           0 B           0 B           0 B           0 B           120  
+                    aten::_efficient_attention_backward         0.17%       3.413ms         0.79%      15.594ms     129.948us     102.652ms         5.96%     110.136ms     917.802us           0 B           0 B       4.79 GB      -3.27 GB           120  
+fmha_cutlassB_f32_aligned_64x64_k64_dropout_sm80(PyT...         0.00%       0.000us         0.00%       0.000us       0.000us     102.652ms         5.96%     102.652ms     855.430us           0 B           0 B           0 B           0 B           120  
+                              Optimizer.step#AdamW.step         0.00%       0.000us         0.00%       0.000us       0.000us      69.322ms         4.03%      69.322ms       6.932ms           0 B           0 B           0 B           0 B            10  
+                     aten::_efficient_attention_forward         0.09%       1.876ms         0.22%       4.285ms      35.708us      48.128ms         2.80%      48.128ms     401.070us       1.88 KB           0 B       1.64 GB           0 B           120  
+fmha_cutlassF_f32_aligned_64x64_rf_sm80(PyTorchMemEf...         0.00%       0.000us         0.00%       0.000us       0.000us      48.128ms         2.80%      48.128ms     401.070us           0 B           0 B           0 B           0 B           120  
+                                              aten::sum         0.67%      13.283ms         1.07%      21.227ms      24.682us      24.307ms         1.41%      24.307ms      28.264us           0 B           0 B      39.73 MB      39.73 MB           860  
+void at::native::reduce_kernel<128, 4, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us      20.131ms         1.17%      20.131ms      27.577us           0 B           0 B           0 B           0 B           730  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      18.487ms         1.07%      18.487ms      24.983us           0 B           0 B           0 B           0 B           740  
+                       aten::native_layer_norm_backward         0.16%       3.124ms         0.44%       8.698ms      34.791us      18.222ms         1.06%      18.222ms      72.888us           0 B           0 B       3.30 GB           0 B           250  
+                                    aten::_foreach_mul_         0.04%     837.274us         0.07%       1.455ms      72.770us      13.874ms         0.81%      13.874ms     693.711us           0 B           0 B           0 B           0 B            20  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      13.874ms         0.81%      13.874ms     115.618us           0 B           0 B           0 B           0 B           120  
+                                    aten::gelu_backward         0.06%       1.266ms         0.10%       2.061ms      17.177us      13.778ms         0.80%      13.778ms     114.814us           0 B           0 B       6.33 GB       6.33 GB           120  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      13.778ms         0.80%      13.778ms     114.814us           0 B           0 B           0 B           0 B           120  
+                                aten::_foreach_addcdiv_         0.04%     766.691us         0.05%       1.041ms     104.145us      13.330ms         0.77%      13.330ms       1.333ms           0 B           0 B           0 B           0 B            10  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      13.330ms         0.77%      13.330ms     222.166us           0 B           0 B           0 B           0 B            60  
+                                             aten::add_         0.27%       5.326ms         0.42%       8.338ms       3.376us      11.691ms         0.68%      11.691ms       4.733us           0 B           0 B           0 B           0 B          2470  
+void at::native::(anonymous namespace)::GammaBetaBac...         0.00%       0.000us         0.00%       0.000us       0.000us      10.879ms         0.63%      10.879ms      43.514us           0 B           0 B           0 B           0 B           250  
+                                aten::_foreach_addcmul_         0.04%     701.353us         0.05%     955.115us      95.512us      10.161ms         0.59%      10.161ms       1.016ms           0 B           0 B           0 B           0 B            10  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      10.161ms         0.59%      10.161ms     169.350us           0 B           0 B           0 B           0 B            60  
+                                   aten::_foreach_lerp_         0.03%     555.194us         0.04%     825.900us      82.590us      10.134ms         0.59%      10.134ms       1.013ms           0 B           0 B           0 B           0 B            10  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 1.985s
+Self CUDA time total: 1.722s
+
+
+Peak CUDA memory allocated: 4.093 GiB
+BASELINE PROFILING PASSED
+===== PROFILING END =====
+2026-09-21T18:25:49+02:00

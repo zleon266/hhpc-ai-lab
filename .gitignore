@@ -3,3 +3,4 @@ DISTRIBUTED/outputs/
 
 __pycache__/
 *.pyc
+PROFILING/traces/

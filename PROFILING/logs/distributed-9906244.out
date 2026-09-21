@@ -1,0 +1,136 @@
+slurmstepd: info: Setting TMPDIR to /scratch/9906244. Previous errors about TMPDIR can be discarded
+===== DISTRIBUTED PROFILING =====
+JOB_ID=9906244
+MASTER_ADDR=a100-17
+MASTER_PORT=29500
+TRACE_DIR=PROFILING/traces/distributed-9906244
+NODES:
+a100-17
+a100-18
+===== GPU ALLOCATION =====
+NVIDIA A100-PCIE-40GB, 570.86.15, 40960 MiB
+NVIDIA A100-PCIE-40GB, 570.86.15, 40960 MiB
+NVIDIA A100-PCIE-40GB, 570.86.15, 40960 MiB
+NVIDIA A100-PCIE-40GB, 570.86.15, 40960 MiB
+===== PROFILING START =====
+2026-09-21T18:40:46+02:00
+rank=1 world_size=4 host=c208-1 local_rank=1 gpu=NVIDIA A100-PCIE-40GB
+rank=0 world_size=4 host=c208-1 local_rank=0 gpu=NVIDIA A100-PCIE-40GB
+rank=2 world_size=4 host=c208-2 local_rank=0 gpu=NVIDIA A100-PCIE-40GB
+rank=3 world_size=4 host=c208-2 local_rank=1 gpu=NVIDIA A100-PCIE-40GB
+rank=1 step=1/15 loss=5.984976
+rank=0 step=1/15 loss=5.890534
+rank=2 step=1/15 loss=5.819356
+rank=3 step=1/15 loss=5.883982
+rank=2 step=2/15 loss=5.566226
+rank=3 step=2/15 loss=5.530604
+rank=1 step=2/15 loss=5.460727
+rank=0 step=2/15 loss=5.612906
+rank=0 step=3/15 loss=5.224798
+rank=1 step=3/15 loss=5.173662
+rank=2 step=3/15 loss=5.216256
+rank=3 step=3/15 loss=5.333243
+rank=3 step=4/15 loss=4.679888
+rank=0 step=4/15 loss=4.851851
+rank=1 step=4/15 loss=4.987185
+rank=2 step=4/15 loss=4.731934
+rank=3 step=5/15 loss=4.277491
+rank=0 step=5/15 loss=4.624939
+rank=1 step=5/15 loss=4.469894
+rank=2 step=5/15 loss=4.249962
+rank=3 step=6/15 loss=3.975214
+rank=0 step=6/15 loss=4.139568
+rank=1 step=6/15 loss=4.000835
+rank=2 step=6/15 loss=3.807776
+rank=3 step=7/15 loss=3.289936
+rank=0 step=7/15 loss=3.477038
+rank=1 step=7/15 loss=3.541352
+rank=2 step=7/15 loss=3.666983
+rank=3 step=8/15 loss=3.025711
+rank=0 step=8/15 loss=3.242236
+rank=1 step=8/15 loss=3.034517
+rank=2 step=8/15 loss=3.013438
+rank=3 step=9/15 loss=2.862683
+rank=0 step=9/15 loss=2.585551
+rank=1 step=9/15 loss=2.669950
+rank=2 step=9/15 loss=2.642748
+rank=3 step=10/15 loss=2.417778
+rank=0 step=10/15 loss=2.349756
+rank=1 step=10/15 loss=2.230495
+rank=2 step=10/15 loss=2.443655
+rank=1 step=11/15 loss=2.058879
+rank=3 step=11/15 loss=1.790848
+rank=0 step=11/15 loss=2.135941
+rank=2 step=11/15 loss=1.906424
+rank=3 step=12/15 loss=1.680628
+rank=0 step=12/15 loss=1.577593
+rank=1 step=12/15 loss=1.698179
+rank=2 step=12/15 loss=1.620700
+rank=3 step=13/15 loss=1.623635
+rank=0 step=13/15 loss=1.286254rank=1 step=13/15 loss=1.310257
+
+rank=2 step=13/15 loss=1.387434
+rank=3 step=14/15 loss=0.948740
+rank=1 step=14/15 loss=1.143624rank=0 step=14/15 loss=1.145081
+
+rank=2 step=14/15 loss=0.965071
+rank=3 step=15/15 loss=0.728525
+rank=0 step=15/15 loss=0.619621
+rank=1 step=15/15 loss=0.716666
+rank=2 step=15/15 loss=0.789410
+rank=1 peak_cuda_memory=2.474 GiB
+
+===== DISTRIBUTED PROFILER SUMMARY =====
+rank=3 peak_cuda_memory=2.474 GiB
+rank=2 peak_cuda_memory=2.474 GiB
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg       CPU Mem  Self CPU Mem      CUDA Mem  Self CUDA Mem    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                          ProfilerStep*         0.00%       0.000us         0.00%       0.000us       0.000us     901.756ms        70.17%     901.756ms      90.176ms           0 B           0 B           0 B           0 B            10  
+                                     record_param_comms         0.73%       8.724ms         0.95%      11.470ms      76.466us     603.382ms        46.95%     603.382ms       4.023ms           0 B           0 B           0 B           0 B           150  
+ncclDevKernel_AllReduce_Sum_f32_RING_LL(ncclDevKerne...         0.00%       0.000us         0.00%       0.000us       0.000us     603.288ms        46.94%     603.288ms       4.641ms           0 B           0 B           0 B           0 B           130  
+                                        nccl:all_reduce         0.00%       0.000us         0.00%       0.000us       0.000us     603.288ms        46.94%     603.288ms       4.641ms           0 B           0 B           0 B           0 B           130  
+                                               aten::mm         2.27%      27.246ms         3.19%      38.375ms      26.284us     313.460ms        24.39%     313.460ms     214.699us           0 B           0 B       6.91 GB       6.91 GB          1460  
+                        DistributedDataParallel.forward         0.00%       0.000us         0.00%       0.000us       0.000us     169.610ms        13.20%     169.610ms      16.961ms           0 B           0 B           0 B           0 B            10  
+                                            aten::addmm         1.74%      20.891ms         2.30%      27.666ms      37.899us     124.454ms         9.68%     124.454ms     170.485us           0 B           0 B       3.58 GB       3.58 GB           730  
+                        ampere_sgemm_64x32_sliced1x4_nt         0.00%       0.000us         0.00%       0.000us       0.000us      95.268ms         7.41%      95.268ms     158.781us           0 B           0 B           0 B           0 B           600  
+                                 ampere_sgemm_128x32_tn         0.00%       0.000us         0.00%       0.000us       0.000us      88.179ms         6.86%      88.179ms     146.965us           0 B           0 B           0 B           0 B           600  
+                              Optimizer.step#AdamW.step         0.00%       0.000us         0.00%       0.000us       0.000us      69.790ms         5.43%      69.790ms       6.979ms           0 B           0 B           0 B           0 B            10  
+                                 ampere_sgemm_128x32_nn         0.00%       0.000us         0.00%       0.000us       0.000us      69.597ms         5.42%      69.597ms     142.034us           0 B           0 B           0 B           0 B           490  
+                                 ampere_sgemm_128x64_nn         0.00%       0.000us         0.00%       0.000us       0.000us      56.001ms         4.36%      56.001ms     466.675us           0 B           0 B           0 B           0 B           120  
+                    aten::_efficient_attention_backward         0.30%       3.653ms         1.38%      16.543ms     137.854us      46.252ms         3.60%      52.984ms     441.532us           0 B           0 B       1.20 GB    -823.07 MB           120  
+fmha_cutlassB_f32_aligned_64x64_k64_dropout_sm80(PyT...         0.00%       0.000us         0.00%       0.000us       0.000us      46.252ms         3.60%      46.252ms     385.435us           0 B           0 B           0 B           0 B           120  
+void cutlass::Kernel2<cutlass_80_simt_sgemm_128x64_8...         0.00%       0.000us         0.00%       0.000us       0.000us      46.182ms         3.59%      46.182ms     384.849us           0 B           0 B           0 B           0 B           120  
+                                 ampere_sgemm_128x64_nt         0.00%       0.000us         0.00%       0.000us       0.000us      44.852ms         3.49%      44.852ms     373.769us           0 B           0 B           0 B           0 B           120  
+                                 ampere_sgemm_128x64_tn         0.00%       0.000us         0.00%       0.000us       0.000us      36.045ms         2.80%      36.045ms     300.377us           0 B           0 B           0 B           0 B           120  
+                                            aten::copy_         0.75%       9.043ms         1.83%      21.982ms       9.641us      34.110ms         2.65%      34.110ms      14.960us           0 B           0 B           0 B           0 B          2280  
+                         Memcpy DtoD (Device -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us      32.396ms         2.52%      32.396ms      16.118us           0 B           0 B           0 B           0 B          2010  
+                                              aten::mul         1.27%      15.304ms         2.39%      28.702ms      13.603us      23.495ms         1.83%      23.495ms      11.135us           0 B           0 B     405.00 MB     405.00 MB          2110  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      21.709ms         1.69%      21.709ms      11.190us           0 B           0 B           0 B           0 B          1940  
+                                              aten::sum         1.25%      14.988ms         2.00%      24.010ms      27.918us      20.402ms         1.59%      20.402ms      23.724us           0 B           0 B      20.75 MB      20.75 MB           860  
+void at::native::reduce_kernel<128, 4, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us      14.556ms         1.13%      14.556ms      19.939us           0 B           0 B           0 B           0 B           730  
+                                    aten::_foreach_mul_         0.09%       1.069ms         0.16%       1.890ms      94.510us      14.044ms         1.09%      14.044ms     702.198us           0 B           0 B           0 B           0 B            20  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      14.044ms         1.09%      14.044ms     117.033us           0 B           0 B           0 B           0 B           120  
+                                aten::_foreach_addcdiv_         0.07%     807.155us         0.09%       1.115ms     111.498us      13.445ms         1.05%      13.445ms       1.345ms           0 B           0 B           0 B           0 B            10  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      13.445ms         1.05%      13.445ms     224.091us           0 B           0 B           0 B           0 B            60  
+                     aten::_efficient_attention_forward         0.17%       2.027ms         0.39%       4.712ms      39.266us      13.397ms         1.04%      13.397ms     111.641us       1.88 KB           0 B     421.33 MB           0 B           120  
+fmha_cutlassF_f32_aligned_64x64_rf_sm80(PyTorchMemEf...         0.00%       0.000us         0.00%       0.000us       0.000us      13.397ms         1.04%      13.397ms     111.641us           0 B           0 B           0 B           0 B           120  
+                                aten::_foreach_addcmul_         0.06%     723.482us         0.09%       1.050ms     105.008us      10.321ms         0.80%      10.321ms       1.032ms           0 B           0 B           0 B           0 B            10  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      10.321ms         0.80%      10.321ms     172.023us           0 B           0 B           0 B           0 B            60  
+                                   aten::_foreach_lerp_         0.05%     573.527us         0.08%     918.165us      91.817us      10.182ms         0.79%      10.182ms       1.018ms           0 B           0 B           0 B           0 B            10  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us      10.182ms         0.79%      10.182ms     169.700us           0 B           0 B           0 B           0 B            60  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us       8.780ms         0.68%       8.780ms      11.865us           0 B           0 B           0 B           0 B           740  
+                       aten::native_layer_norm_backward         0.31%       3.673ms         0.81%       9.797ms      39.190us       8.103ms         0.63%       8.103ms      32.412us           0 B           0 B     845.21 MB           0 B           250  
+                                    aten::_foreach_div_         0.03%     417.358us         0.06%     733.365us      73.337us       7.199ms         0.56%       7.199ms     719.893us           0 B           0 B           0 B           0 B            10  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us       7.199ms         0.56%       7.199ms     119.982us           0 B           0 B           0 B           0 B            60  
+                                             aten::add_         0.50%       6.001ms         0.73%       8.734ms       3.536us       7.083ms         0.55%       7.083ms       2.868us           0 B           0 B           0 B           0 B          2470  
+                                    aten::_foreach_add_         0.21%       2.494ms         0.38%       4.572ms     228.617us       7.055ms         0.55%       7.055ms     352.748us           0 B           0 B           0 B           0 B            20  
+void at::native::(anonymous namespace)::multi_tensor...         0.00%       0.000us         0.00%       0.000us       0.000us       7.055ms         0.55%       7.055ms     117.583us           0 B           0 B           0 B           0 B            60  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 1.203s
+Self CUDA time total: 1.285s
+
+rank=0 peak_cuda_memory=2.474 GiB
+DISTRIBUTED PROFILING PASSED
+===== PROFILING END =====
+2026-09-21T18:41:34+02:00
