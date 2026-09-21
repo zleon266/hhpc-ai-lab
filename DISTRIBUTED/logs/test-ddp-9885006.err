@@ -1,0 +1,284 @@
+cesga/2020 unloaded
+        Preparing the environment for use of the CESGA 2022 software stack.
+        Please rebuild modules cache: module --ignore-cache avail
+     
+cesga/2022 loaded
+
+The following have been reloaded with a version change:
+  1) cesga/2020 => cesga/2022
+
+python/3.10.8 loaded
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Found cached dataset squad (/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f)
+Found cached dataset squad (/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f)
+[INFO|configuration_utils.py:853] 2026-09-21 01:00:23,976 >> loading configuration file config.json from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+[INFO|configuration_utils.py:929] 2026-09-21 01:00:23,983 >> Model config BertConfig {
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "eos_token_id": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:853] 2026-09-21 01:00:24,107 >> loading configuration file config.json from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+[INFO|configuration_utils.py:929] 2026-09-21 01:00:24,114 >> Model config BertConfig {
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "eos_token_id": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:853] 2026-09-21 01:00:24,127 >> loading configuration file config.json from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+[INFO|configuration_utils.py:929] 2026-09-21 01:00:24,129 >> Model config BertConfig {
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "eos_token_id": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:853] 2026-09-21 01:00:24,251 >> loading configuration file config.json from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/config.json
+[INFO|configuration_utils.py:929] 2026-09-21 01:00:24,254 >> Model config BertConfig {
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "eos_token_id": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "tie_word_embeddings": true,
+  "transformers_version": "5.17.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:768] 2026-09-21 01:00:24,680 >> loading weights file model.safetensors from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/model.safetensors
+[INFO|modeling_utils.py:852] 2026-09-21 01:00:24,686 >> Since the `dtype` attribute can't be found in model's config object, will use dtype=torch.float32 as derived from model's weights
+[INFO|modeling_utils.py:768] 2026-09-21 01:00:24,748 >> loading weights file model.safetensors from cache at /mnt/netapp2/Store_uni//home/ulc/cursos/curso342/hf-cache/hub/models--google-bert--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594/model.safetensors
+[INFO|modeling_utils.py:852] 2026-09-21 01:00:24,754 >> Since the `dtype` attribute can't be found in model's config object, will use dtype=torch.float32 as derived from model's weights
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 149/197 [00:00<00:00, 1486.28it/s]Loading weights:  77%|███████▋  | 151/197 [00:00<00:00, 1506.95it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 1581.68it/s]
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 1559.19it/s]
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 2974.14it/s]
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 3506.15it/s]
+[WARNING|loading_report.py:307] 2026-09-21 01:00:25,176 >> [1mBertForQuestionAnswering LOAD REPORT[0m from: google-bert/bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+qa_outputs.bias                            | MISSING    | 
+qa_outputs.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[WARNING|loading_report.py:307] 2026-09-21 01:00:25,176 >> [1mBertForQuestionAnswering LOAD REPORT[0m from: google-bert/bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+qa_outputs.bias                            | MISSING    | 
+qa_outputs.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[WARNING|loading_report.py:307] 2026-09-21 01:00:25,176 >> [1mBertForQuestionAnswering LOAD REPORT[0m from: google-bert/bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+bert.pooler.dense.weight                   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+qa_outputs.bias                            | MISSING    | 
+qa_outputs.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[WARNING|loading_report.py:307] 2026-09-21 01:00:25,176 >> [1mBertForQuestionAnswering LOAD REPORT[0m from: google-bert/bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+bert.pooler.dense.bias                     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+bert.pooler.dense.weight                   | UNEXPECTED | 
+qa_outputs.bias                            | MISSING    | 
+qa_outputs.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading cached processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-9de51bc207bf8c1e_*_of_00001.arrow
+Loading cached processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-9de51bc207bf8c1e_*_of_00001.arrow
+[rank2]:[W921 01:00:25.975449482 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/mypython/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W921 01:00:25.001748196 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+Loading cached processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-3ab02d26e0fd990d_*_of_00001.arrow
+Loading cached processed dataset at /mnt/netapp2/Store_uni/home/ulc/cursos/curso342/hf-cache/datasets/rajpurkar___squad/plain_text/0.0.0/7b6d24c440a36b6815f21b70d25016731768db1f/cache-3ab02d26e0fd990d_*_of_00001.arrow
+[INFO|trainer.py:1562] 2026-09-21 01:00:33,526 >> ***** Running training *****
+[INFO|trainer.py:1563] 2026-09-21 01:00:33,526 >>   Num examples = 1,000
+[INFO|trainer.py:1564] 2026-09-21 01:00:33,526 >>   Num Epochs = 1
+[INFO|trainer.py:1565] 2026-09-21 01:00:33,526 >>   Num update steps per epoch = 84
+[INFO|trainer.py:1566] 2026-09-21 01:00:33,526 >>   Instantaneous batch size per device = 3
+[INFO|trainer.py:1569] 2026-09-21 01:00:33,526 >>   Total train batch size (w. parallel, distributed & accumulation) = 12
+[INFO|trainer.py:1570] 2026-09-21 01:00:33,526 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1571] 2026-09-21 01:00:33,526 >>   Total optimization steps = 84
+[INFO|trainer.py:1562] 2026-09-21 01:00:33,526 >> ***** Running training *****
+[INFO|trainer.py:1563] 2026-09-21 01:00:33,527 >>   Num examples = 1,000
+[INFO|trainer.py:1564] 2026-09-21 01:00:33,527 >>   Num Epochs = 1
+[INFO|trainer.py:1565] 2026-09-21 01:00:33,527 >>   Num update steps per epoch = 84
+[INFO|trainer.py:1566] 2026-09-21 01:00:33,527 >>   Instantaneous batch size per device = 3
+[INFO|trainer.py:1569] 2026-09-21 01:00:33,527 >>   Total train batch size (w. parallel, distributed & accumulation) = 12
+[INFO|trainer.py:1570] 2026-09-21 01:00:33,527 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1571] 2026-09-21 01:00:33,527 >>   Total optimization steps = 84
+[INFO|trainer.py:1572] 2026-09-21 01:00:33,527 >>   Number of trainable parameters = 108,893,186
+[INFO|trainer.py:1572] 2026-09-21 01:00:33,528 >>   Number of trainable parameters = 108,893,186
+[rank2]:[W921 01:00:35.559320857 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W921 01:00:35.559321671 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+  0%|          | 0/84 [00:00<?, ?it/s][rank0]:[W921 01:00:35.563664783 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W921 01:00:35.563662045 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+  1%|          | 1/84 [00:02<02:56,  2.12s/it]  2%|▏         | 2/84 [00:02<01:17,  1.05it/s]  4%|▎         | 3/84 [00:02<00:46,  1.76it/s]  6%|▌         | 5/84 [00:02<00:23,  3.34it/s]  8%|▊         | 7/84 [00:02<00:15,  4.91it/s] 11%|█         | 9/84 [00:02<00:11,  6.35it/s] 13%|█▎        | 11/84 [00:03<00:09,  7.59it/s] 15%|█▌        | 13/84 [00:03<00:08,  8.61it/s] 18%|█▊        | 15/84 [00:03<00:07,  9.42it/s] 20%|██        | 17/84 [00:03<00:06, 10.05it/s] 23%|██▎       | 19/84 [00:03<00:06, 10.51it/s]                                                24%|██▍       | 20/84 [00:03<00:06, 10.51it/s] 25%|██▌       | 21/84 [00:03<00:06, 10.29it/s] 27%|██▋       | 23/84 [00:04<00:05, 10.70it/s] 30%|██▉       | 25/84 [00:04<00:05, 10.98it/s] 32%|███▏      | 27/84 [00:04<00:05, 11.18it/s] 35%|███▍      | 29/84 [00:04<00:04, 11.34it/s] 37%|███▋      | 31/84 [00:04<00:04, 11.45it/s] 39%|███▉      | 33/84 [00:04<00:04, 11.54it/s] 42%|████▏     | 35/84 [00:05<00:04, 11.60it/s] 44%|████▍     | 37/84 [00:05<00:04, 11.63it/s] 46%|████▋     | 39/84 [00:05<00:03, 11.67it/s]                                                48%|████▊     | 40/84 [00:05<00:03, 11.67it/s] 49%|████▉     | 41/84 [00:05<00:03, 11.67it/s] 51%|█████     | 43/84 [00:05<00:03, 11.69it/s] 54%|█████▎    | 45/84 [00:05<00:03, 11.70it/s] 56%|█████▌    | 47/84 [00:06<00:03, 11.72it/s] 58%|█████▊    | 49/84 [00:06<00:02, 11.72it/s] 61%|██████    | 51/84 [00:06<00:02, 11.71it/s] 63%|██████▎   | 53/84 [00:06<00:02, 11.71it/s] 65%|██████▌   | 55/84 [00:06<00:02, 11.73it/s] 68%|██████▊   | 57/84 [00:07<00:02, 11.73it/s] 70%|███████   | 59/84 [00:07<00:02, 11.73it/s]                                                71%|███████▏  | 60/84 [00:07<00:02, 11.73it/s] 73%|�[INFO|trainer.py:1928] 2026-09-21 01:00:42,851 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+��██████▎  | 61/84 [00:07<00:01, 11.73it/s] 75%|███████▌  | 63/84 [00:07<00:01, 11.72it/s] 77%|███████▋  | 65/84 [00:07<00:01, 11.73it/s] 80%|███████▉  | 67/84 [00:07<00:01, 11.72it/s] 82%|████████▏ | 69/84 [00:08<00:01, 11.73it/s] 85%|████████▍ | 71/84 [00:08<00:01, 11.73it/s] 87%|████████▋ | 73/84 [00:08<00:00, 11.73it/s] 89%|████████▉ | 75/84 [00:08<00:00, 11.73it/s] 92%|█████████▏| 77/84 [00:08<00:00, 11.73it/s] 94%|█████████▍| 79/84 [00:08<00:00, 11.73it/s]                                                95%|█████████▌| 80/84 [00:08<00:00, 11.73it/s] 96%|█████████▋| 81/84 [00:09<00:00, 11.72it/s] 99%|█████████▉| 83/84 [00:09<00:00, 11.73it/s][INFO|trainer.py:1928] 2026-09-21 01:00:42,851 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                               100%|██████████| 84/84 [00:09<00:00, 11.73it/s]100%|██████████| 84/84 [00:09<00:00,  9.01it/s]
+[INFO|trainer.py:3993] 2026-09-21 01:00:42,855 >> Saving model checkpoint to DISTRIBUTED/outputs/test-9885006
+[INFO|trainer.py:1177] 2026-09-21 01:00:42,855 >> The following columns in the Evaluation set don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: offset_mapping, example_id. If offset_mapping, example_id are not expected by `BertForQuestionAnswering.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2840] 2026-09-21 01:00:42,862 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:2842] 2026-09-21 01:00:42,862 >>   Num examples = 200
+[INFO|trainer.py:2845] 2026-09-21 01:00:42,862 >>   Batch size = 3
+[INFO|configuration_utils.py:607] 2026-09-21 01:00:42,882 >> Configuration saved in DISTRIBUTED/outputs/test-9885006/config.json
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.05it/s]
+[INFO|modeling_utils.py:3556] 2026-09-21 01:00:43,849 >> Model weights saved in DISTRIBUTED/outputs/test-9885006/model.safetensors
+[INFO|tokenization_utils_base.py:2113] 2026-09-21 01:00:43,852 >> tokenizer config file saved in DISTRIBUTED/outputs/test-9885006/tokenizer_config.json
+[INFO|trainer.py:1177] 2026-09-21 01:00:44,079 >> The following columns in the Evaluation set don't have a corresponding argument in `BertForQuestionAnswering.forward` and have been ignored: example_id, offset_mapping. If example_id, offset_mapping are not expected by `BertForQuestionAnswering.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2840] 2026-09-21 01:00:44,086 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:2842] 2026-09-21 01:00:44,087 >>   Num examples = 200
+[INFO|trainer.py:2845] 2026-09-21 01:00:44,087 >>   Batch size = 3
+  0%|          | 0/17 [00:00<?, ?it/s] 41%|████      | 7/17 [00:00<00:00, 67.15it/s] 82%|████████▏ | 14/17 [00:00<00:00, 61.02it/s]
+  0%|          | 0/200 [00:00<?, ?it/s][A
+ 76%|███████▌  | 151/200 [00:00<00:00, 1500.59it/s][A100%|██████████| 200/200 [00:00<00:00, 1513.83it/s]
+[rank2]:[W921 01:00:44.188760986 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+100%|██████████| 17/17 [00:00<00:00, 28.54it/s]
+[INFO|modelcard.py:264] 2026-09-21 01:00:44,868 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Question Answering', 'type': 'question-answering'}, 'dataset': {'name': 'rajpurkar/squad', 'type': 'rajpurkar/squad'}}
+[rank0]:[W921 01:00:45.675062914 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

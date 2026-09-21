@@ -1,0 +1,11 @@
+cesga/2022 unloaded
+python/3.10.8 unloaded
+        Preparing the environment for use of the CESGA 2022 software stack.
+        Please rebuild modules cache: module --ignore-cache avail
+     
+cesga/2022 loaded
+python/3.10.8 loaded
+python/3.10.8 unloaded
+python/3.10.8 loaded
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso342/mypython/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)

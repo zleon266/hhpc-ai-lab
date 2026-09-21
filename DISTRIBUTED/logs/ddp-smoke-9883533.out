@@ -1,0 +1,15 @@
+slurmstepd: info: Setting TMPDIR to /scratch/9883533. Previous errors about TMPDIR can be discarded
+MASTER_ADDR=a100-61
+MASTER_PORT=29500
+NODES:
+a100-61
+a100-64
+rank=2 world_size=4 host=c210-16 local_rank=0 gpu=NVIDIA A100-PCIE-40GB
+rank=3 world_size=4 host=c210-16 local_rank=1 gpu=NVIDIA A100-PCIE-40GB
+rank=1 world_size=4 host=c210-13 local_rank=1 gpu=NVIDIA A100-PCIE-40GB
+rank=0 world_size=4 host=c210-13 local_rank=0 gpu=NVIDIA A100-PCIE-40GB
+rank=0 all_reduce_sum=10.0rank=1 all_reduce_sum=10.0
+
+rank=2 all_reduce_sum=10.0rank=3 all_reduce_sum=10.0
+
+DDP SMOKE TEST PASSED
